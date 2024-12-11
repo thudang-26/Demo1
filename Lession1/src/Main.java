@@ -2,14 +2,23 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        int a = 5;
+        int b = 5;
+        int c = a + b;
+        float d = 5.5f;
+        float e= 6.5f;
+        float f = d*e;
+        int g = 26;
+        int h = 5;
+        int t = g/h;
+        int k = g%h;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        System.out.println("Phần dư của g chia h là: " + k);
+
+        System.out.println("Phần nguyên của g chia h là: " + t);
+
+        System.out.println("Tích của 2 số d và e là: " + f);
+
+        System.out.println("Tổng của a và b là: " + c);
     }
 }
