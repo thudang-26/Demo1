@@ -5,6 +5,7 @@ public class Main {
         int a = 5;
         int b = 5;
         int c = a + b;
+        double l = 10.5;
         float d = 5.5f;
         float e= 6.5f;
         float f = d*e;
@@ -20,5 +21,7 @@ public class Main {
         System.out.println("Tích của 2 số d và e là: " + f);
 
         System.out.println("Tổng của a và b là: " + c);
+
+        System.out.println(l);
     }
 }
