@@ -29,7 +29,7 @@ public class ly_thuyet {
 //        }
 
         int a = 10;
-        if(a<0){
+        if(a < 0){
             System.out.println("a là số âm");
         }else{
             System.out.println("a là số dương");
