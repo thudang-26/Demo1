@@ -6,33 +6,20 @@ public class BTVN3 {
     public static void main(String[] args) {
         int a = 857402;
         int b = a/100000;
+        System.out.printf(b + "");
         int c = a%100000;
-        if (b == 8){
-            System.out.printf("" +b);
-            int d = c/10000;
-            int e = c%10000;
-//            System.out.println("Số e =" +e );
-                System.out.printf("5");
-                int f = e/1000;
-                int g = e%1000;
-//                System.out.println("Số g =" + g);
-                if (f == 7){
-                    System.out.printf("7");
-                    int h = g - 2;
-                    int i = h/100;
-//                    System.out.println("Số h =" + h);
-                    if( i == 4){
-                        System.out.printf("4");
-                        int l = h - 400;
-                        if (l == 0){
-                            System.out.printf("0");
-                            int k = h/200;
-                            if (k == 2){
-                                System.out.printf("2");
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        int d = c/10000;
+        System.out.printf(d + "");
+        int e = c%10000;
+        int f = e/1000;
+        System.out.printf(f + "");
+        int g = e%1000;
+        int h = g/100;
+        System.out.printf(h + "");
+        int l = g - g;
+        System.out.printf(l + "");
+        int i = g%100;
+        System.out.printf(i + "");
+
     }
+}
