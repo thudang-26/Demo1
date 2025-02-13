@@ -13,17 +13,29 @@ public class Excercise_3 {
         int C = random.nextInt(2000)-1000;
         System.out.println("Giá trị của c là: " + C);
         if (A == 0){
-            System.out.println("Phương trình có nghiệm à: x = " + -C/B);
-        }else {
-            int denta = B*B - 4*A*C;
-            System.out.println("Denta =: " + denta);
-            if (denta < 0){
-                System.out.println("Phương trình vô nghiệm");
-            }else if (denta == 0){
-                System.out.println("Phương trình có nghiệm kép x1 = x2 = " + -B/2*A);
+            System.out.println("Phương trình có nghiệm là: x = " + -C/B);
+        }else if (C == 0) {
+            System.out.println("hương trình có 2 nghiệm là: x = 0 và x = " + -B / A);
+        }else if (B == 0) {
+            int D = -C/A;
+            if (D == 0) {
+                System.out.println("Phương trình có nghiệm là: x = 0");
+            }else if (D > 0){
+                System.out.println("Phương trình có nghiệm là: x = " + -Math.sqrt(-C)/A);
+                System.out.println("x2 = " + Math.sqrt(-C)/A);
             }else {
-                System.out.println("Phương trình có 2 nghiệm phân biệt x1 = " + (-B+Math.sqrt(denta))/2*A + ", ");
-                System.out.printf("x2 = " + (-B-Math.sqrt(denta))/2*A);
+                System.out.println("Phương trình vô nghiệm");
+            }
+        }else {
+            int denta = B * B - 4 * A * C;
+            System.out.println("Denta =: " + denta);
+            if (denta < 0) {
+                System.out.println("Phương trình vô nghiệm");
+            } else if (denta == 0) {
+                System.out.println("Phương trình có nghiệm kép x1 = x2 = " + -B / 2 * A);
+            } else {
+                System.out.println("Phương trình có 2 nghiệm phân biệt x1 = " + (-B + Math.sqrt(denta)) / 2 * A + ", ");
+                System.out.printf("x2 = " + (-B - Math.sqrt(denta)) / 2 * A);
             }
         }
     }
