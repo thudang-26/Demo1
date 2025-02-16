@@ -14,6 +14,11 @@ public class Excercise_3 {
         System.out.println("Giá trị của c là: " + C);
         if (A == 0){
             System.out.println("Phương trình có nghiệm là: x = " + -C/B);
+            if (B == 0){
+                if (C==0){
+                    System.out.println("Phương trình có vô số nghiệm");
+                }
+            }
         }else if (C == 0) {
             System.out.println("hương trình có 2 nghiệm là: x = 0 và x = " + -B / A);
         }else if (B == 0) {
